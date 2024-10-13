@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>ProductPage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .product-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .product-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart-link,.add-to-favorites-link {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+           
+        }
+        .add-to-cart-link{
+        margin-left:110px;
+        }
+
+        .add-to-cart-link:hover {
+            background-color: #0056b3;
+        }
+        .add-to-favorites-link:hover{
+            background-color: #0056b3;
+        }
+        img{
+        width:80%;
+        height:70%;
+        }
+        .product-price{
+        padding:5px;
+        }
+    </style>
+</head>
+<body>
+<h1>Product Page</h1>
+
+    <div class="product-grid">
+        <div class="product-container">
+            <img id="productImage1" src="pexels-prayoon-sajeev-2897529.jpg" alt="Product Image 1">
+             <div class="product-price">₹300</div> <!-- Price added here -->
+          
+            <a href="#" class="add-to-cart-link" onclick="addToCart('file:///C:/CartaddDelete/pexels-prayoon-sajeev-2897529.jpg',300)">
+                <i class="fa fa-shopping-cart"></i> 
+            </a>
+            <a href="#" class="add-to-favorites-link" onclick="addToWishlist('file:///C:/CartaddDelete/pexels-prayoon-sajeev-2897529.jpg',300)">
+                <i class="fa fa-heart"></i> 
+            </a>
+        </div>
+
+        <div class="product-container">
+            <img id="productImage2" src="mainImage.jpg" alt="Product Image 2">
+             <div class="product-price">₹250</div> <!-- Price added here -->
+        	<a href="#" class="add-to-cart-link" onclick="addToCart('http://localhost:8080/CartaddDelete/mainImage.jpg',250)">
+                <i class="fa fa-shopping-cart"></i> 
+            </a>
+        	
+        	<a href="#" class="add-to-favorites-link" onclick="addToWishlist('http://localhost:8080/CartaddDelete/mainImage.jpg',250)">
+                <i class="fa fa-heart"></i> 
+            </a>
+        </div>
+
+        <div class="product-container">
+            <img id="productImage3" src="main.jpg" alt="Product Image 3">
+             <div class="product-price">₹350</div> <!-- Price added here -->
+        	<a href="#" class="add-to-cart-link" onclick="addToCart('http://localhost:8080/CartaddDelete/main.jpg',350)">
+                <i class="fa fa-shopping-cart"></i> 
+            </a>
+        	
+        	<a href="#" class="add-to-favorites-link" onclick="addToWishlist('http://localhost:8080/CartaddDelete/main.jpg',350)">
+                <i class="fa fa-heart"></i> 
+            </a>
+        </div>
+        
+        <div class="product-container">
+            <img id="productImage4" src="Kothamalli-Briyani.jpg" alt="Product Image 4">
+             <div class="product-price">₹400</div> <!-- Price added here -->
+        	<a href="#" class="add-to-cart-link" onclick="addToCart('http://localhost:8080/CartaddDelete/Kothamalli-Briyani.jpg',400)">
+                <i class="fa fa-shopping-cart"></i> 
+            </a>
+        	
+        	<a href="#" class="add-to-favorites-link" onclick="addToWishlist('http://localhost:8080/CartaddDelete/Kothamalli-Briyani.jpg',400)">
+                <i class="fa fa-heart"></i> 
+            </a>
+        
+        </div>
+        
+        <div class="product-container">
+            <img id="productImage5" src="briyani.png" alt="Product Image 5">
+             <div class="product-price">₹150</div> <!-- Price added here -->
+        	<a href="#" class="add-to-cart-link" onclick="addToCart('http://localhost:8080/CartaddDelete/briyani.png',150)">
+                <i class="fa fa-shopping-cart"></i> 
+            </a>
+        	
+        	<a href="#" class="add-to-favorites-link" onclick="addToWishlist('http://localhost:8080/CartaddDelete/briyani.png',150)">
+                <i class="fa fa-heart"></i> 
+            </a>
+        </div>
+        
+        <div class="product-container">
+            <img id="productImage6" src="order.jpg" alt="Product Image 6">
+             <div class="product-price">₹200</div> <!-- Price added here -->
+        	<a href="#" class="add-to-cart-link" onclick="addToCart('http://localhost:8080/CartaddDelete/order.jpg',200)">
+                <i class="fa fa-shopping-cart"></i> 
+            </a>
+        	
+        	<a href="#" class="add-to-favorites-link" onclick="addToWishlist('http://localhost:8080/CartaddDelete/order.jpg',200)">
+                <i class="fa fa-heart"></i> 
+            </a>
+        </div>
+
+        <!-- Add more product containers as needed -->
+    </div>
+<!-- 
+Asynchronous Requests: XHR allows requests to be sent to a server asynchronously. This means the browser can continue executing other scripts and handling user interactions while waiting for the server's response.
+ -->
+    <script>
+    function addToCart(imageSrc, price) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'insertImage.jsp', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == XMLHttpRequest.DONE) {
+                    if (xhr.status == 200) {
+                        console.log('Image inserted into database successfully.');
+                        alert('Image added to cart successfully!');
+                    } else {
+                        console.error('Error inserting image into database.');
+                        alert('Failed to add image to cart.');
+                    }
+                }
+            };
+            xhr.send('imageSrc=' + encodeURIComponent(imageSrc) + '&price=' + encodeURIComponent(price));        }
+        
+        
+        function addToWishlist(imageSrc,price) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'addToWishlist.jsp', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == XMLHttpRequest.DONE) {
+                    if (xhr.status == 200) {
+                        console.log('Image added to wishlist successfully.');
+                        alert('Image added to wishlist successfully!');
+                    } else {
+                        console.error('Error adding image to wishlist.');
+                        alert('Failed to add image to wishlist.');
+                    }
+                }
+            };
+            xhr.send('imageSrc=' + encodeURIComponent(imageSrc) + '&price=' + encodeURIComponent(price));        }
+
+
+    </script>
+</body>
+</html>
