@@ -5,3 +5,6 @@
 **Role** : Designed and developed the entire application, including front-end and back-end components, ensuring secure database interactions and seamless user experience.
 
 ---
+
+**Frontend** : 
+- HTML5
