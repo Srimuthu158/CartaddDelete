@@ -8,3 +8,28 @@
 
 **Frontend** : 
 - HTML5
+- CSS3
+- Javascript
+
+**Backend** :
+- Technologies : JSP & Servlet
+- API : JDBC
+- Database : MSSQL
+
+  ---
+
+**Features** :
+- Product listing and filtering based on categories.
+- Shopping cart functionality to add/remove items dynamically.
+- Whishlist option for saving the products to buy later on.
+-  Integrated JDBC for handling SQL queries and database connections with MSSQL.
+
+---
+
+**Folder Structure** :
+
+plant-seller/
+├── frontend/
+│   ├── (frontend files and directories)
+├── backend/
+│   ├── (backend files and directories)
