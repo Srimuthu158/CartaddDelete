@@ -27,9 +27,5 @@
 ---
 
 **Folder Structure** :
-
-plant-seller/
-├── frontend/
-│   ├── (frontend files and directories)
-├── backend/
-│   ├── (backend files and directories)
+```
+src/main/webapp
