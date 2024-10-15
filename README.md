@@ -46,7 +46,7 @@ https://github.com/Srimuthu158/CartaddDelete.git
 
 4.**Access the Application** :
 
-- Open the browser and navigate to [http://localhost:8080/](http://localhost:8080/CartaddDelete/)
+- Open the browser and navigate to http://localhost:8080/CartaddDelete
 ---
 
 **Screenshots** :
