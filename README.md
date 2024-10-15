@@ -39,13 +39,14 @@ git clone
 https://github.com/Srimuthu158/CartaddDelete.git
 ```
 2.**Setup the Database** :
--Configure an MSSQL database and run the provided SQL scripts to create necessary tables.
+- Configure an MSSQL database and run the provided SQL scripts to create necessary tables.
 
 3.**Run the Application** :
--Deploy the project on a java servlet container such as Apache Tomcat.
+- Deploy the project on a java servlet container such as Apache Tomcat.
 
 4.**Access the Application** :
--Open the browser and navigate to [http://localhost:8080/](http://localhost:8080/CartaddDelete/)
+
+- Open the browser and navigate to [http://localhost:8080/](http://localhost:8080/CartaddDelete/)
 ---
 
 **Screenshots** :
