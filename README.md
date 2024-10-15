@@ -32,6 +32,14 @@ src/main/webapp
 ```
 ---
 
+1.**Clone the Repository** :
+
+```bash
+git clone
+https://github.com/Srimuthu158/CartaddDelete.git
+```
+---
+
 **Screenshots** :
 ![](https://github.com/Srimuthu158/CartaddDelete/blob/main/Screenshot%20(1).png?raw=true)
 ![](https://github.com/Srimuthu158/CartaddDelete/blob/main/Screenshot%20(8).png?raw=true)
