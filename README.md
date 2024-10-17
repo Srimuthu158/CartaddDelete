@@ -31,6 +31,7 @@
 src/main/webapp
 ```
 ---
+**How to Run** :
 
 1.**Clone the Repository** :
 
